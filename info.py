@@ -29,7 +29,7 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/734170f40b8
 CODE = (environ.get('CODE', 'https://telegra.ph/file/72f425007b22d28bd935e.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'ziplinker.net'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'shareus.io'))
 STREAM_API = (environ.get('STREAM_API', 'ae0832f39e24094a0661626a792e6a2b8880e310'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/adsbypass'))
 
