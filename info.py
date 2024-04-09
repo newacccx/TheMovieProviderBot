@@ -34,7 +34,7 @@ STREAM_API = (environ.get('STREAM_API', '5fJCuEupGITCq9J63cCZyuciNtf2'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/adsbypass'))
 
 # Admins, Channels & Users
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1258695344').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001481389568 -1001540677762 -1002049285913').split()] #Channel id for auto indexing ( make sure bot is admin )
 auth_users = [int(user) if id_pattern.search(user) else user for user in environ.get('AUTH_USERS', '1258695344').split()]
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
