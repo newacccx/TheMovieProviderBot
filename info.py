@@ -29,7 +29,7 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/c5dbbd9a59c
 CODE = (environ.get('CODE', 'https://telegra.ph/file/c5dbbd9a59c718f889f5c.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'api.vnshortener.com'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'vnshortener.com'))
 STREAM_API = (environ.get('STREAM_API', 'dd4a8fbe14c38af91ac980518ca5e8d7e44ab478'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/adsbypass'))
 
@@ -59,7 +59,7 @@ VERIFY = bool(environ.get('VERIFY', True)) # Verification On ( True ) / Off ( Fa
 HOWTOVERIFY = environ.get('HOWTOVERIFY', "https://t.me/adsbypass") # How to open tutorial link for verification
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'api.vnshortener.com')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'vnshortener.com')
 SHORTLINK_API = environ.get('SHORTLINK_API', 'dd4a8fbe14c38af91ac980518ca5e8d7e44ab478')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
