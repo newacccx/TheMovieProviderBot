@@ -29,8 +29,8 @@ SUBSCRIPTION = (environ.get('SUBSCRIPTION', 'https://telegra.ph/file/c5dbbd9a59c
 CODE = (environ.get('CODE', 'https://telegra.ph/file/c5dbbd9a59c718f889f5c.jpg'))
 
 #stream link shortner
-STREAM_SITE = (environ.get('STREAM_SITE', 'api.shareus.io'))
-STREAM_API = (environ.get('STREAM_API', '5fJCuEupGITCq9J63cCZyuciNtf2'))
+STREAM_SITE = (environ.get('STREAM_SITE', 'api.vnshortener.com'))
+STREAM_API = (environ.get('STREAM_API', 'dd4a8fbe14c38af91ac980518ca5e8d7e44ab478'))
 STREAMHTO = (environ.get('STREAMHTO', 'https://t.me/adsbypass'))
 
 # Admins, Channels & Users
@@ -55,12 +55,12 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "telegram")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_Files')
 
 # Verify
-VERIFY = bool(environ.get('VERIFY', False)) # Verification On ( True ) / Off ( False )
+VERIFY = bool(environ.get('VERIFY', True)) # Verification On ( True ) / Off ( False )
 HOWTOVERIFY = environ.get('HOWTOVERIFY', "https://t.me/adsbypass") # How to open tutorial link for verification
 
 # Others
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'api.shareus.io')
-SHORTLINK_API = environ.get('SHORTLINK_API', '5fJCuEupGITCq9J63cCZyuciNtf2')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'api.vnshortener.com')
+SHORTLINK_API = environ.get('SHORTLINK_API', 'dd4a8fbe14c38af91ac980518ca5e8d7e44ab478')
 IS_SHORTLINK = bool(environ.get('IS_SHORTLINK', True))
 DELETE_CHANNELS = [int(dch) if id_pattern.search(dch) else dch for dch in environ.get('DELETE_CHANNELS', '0').split()]
 MAX_B_TN = environ.get("MAX_B_TN", "5")
